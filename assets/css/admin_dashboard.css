@@ -1,0 +1,73 @@
+/* //Dashboard section display and alignment */
+#dashboard {
+  display: flex;
+  margin: 2%;
+  justify-content: space-around;
+}
+
+/* Styling for employee details section */
+/* Employee details div width */
+#employee-details {
+  width: 50%;
+}
+
+/*Details div padding*/
+#details-div {
+  padding-left: 10%;
+}
+
+/*Details card padding and border*/
+.card {
+  padding: 1%;
+  border: 2px solid paleturquoise;
+}
+
+/* Set the height and overflow-y of card body div */
+#body-div {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+/*display values as flex */
+.flex-values {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid paleturquoise;
+  padding: 2%;
+}
+
+#add-new-employee {
+  width: 50%;
+}
+
+/*setting the outline of the form input*/
+.form-outline {
+  border-radius: 3px;
+  color: #14e1d0;
+  background-color: #d35;
+  border: 1px solid #d35;
+}
+
+/* Styling for add new employee section */
+
+/*set the margins and width of add employee form */
+#add-employee-form {
+  margin-top: 3%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/*Styling for gender selection input */
+.gender {
+  border-radius: 3px;
+  border: 1.2px solid #d35;
+  color: rgb(20, 17, 17);
+  background-color: white;
+}
+
+/*Set the background color of add employee button*/
+.btn-primary {
+  background-color: #d35;
+}

@@ -1,0 +1,41 @@
+/*Sign up div styling */
+
+/*Set margin to div and align the contents*/
+#signup {
+  margin: 5% 10%;
+  text-align: center;
+  width: 85%;
+}
+
+/*align the form into center and adjust width*/
+#signup-form {
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/*gender selecetion input alignment*/
+#gender-selection {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*setting the outline of the form input*/
+.form-outline {
+  border: 1px solid #d35;
+
+  border-radius: 3px;
+  color: #d35;
+  background-color: #d35;
+}
+
+/*gender selection display*/
+#gender {
+  background-color: white;
+  border: 1px solid #d35;
+}
+/*set the background color of the sign up button */
+.btn-primary {
+  background-color: #d35;
+}

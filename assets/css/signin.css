@@ -1,0 +1,32 @@
+/*border to body */
+body {
+  border: 2px solid #d35;
+}
+
+/*Sign in div styling */
+
+/*Set margin to div and align the contents*/
+#signin {
+  margin: 5% 10%;
+  text-align: center;
+  width: 80%;
+}
+
+/*align the form into center and adjust width*/
+#signin-form {
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/*setting the outline of the form input*/
+.form-outline {
+  color: #d35;
+  background-color: #d35;
+}
+
+/*set the background color of the sign in button */
+.btn-primary {
+  background-color: #d35;
+}

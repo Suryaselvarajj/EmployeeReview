@@ -1,0 +1,38 @@
+<!-- Style sheet linl -->
+<link rel="stylesheet" href="/css/home_page.css">
+<!-- <Div : Home page Container  -->
+<div id="container">
+    <!-- if user is logged in -->
+    <% if(locals.user) {     
+        <!-- if user's role is ADMIN -->
+        if( locals.user.role =="Admin") { %>
+            <!-- <Div: Home icons -->
+            <div class="home-icons">
+                <!-- <Div: Admin Dashboard -->
+                <div class="hover icon-action"> <a href="/admin-dashboard/<%= locals.user.id %>"><div id="dashboard" class="icon"></div></a><h4>Dashboard</h4></div>
+            </div>
+            <!-- <Div: Home icons -->
+        <!-- User's role is EMPLOYEE --> 
+        <% } else { %>  
+        <!-- <Div: Home icons -->
+            <div class="home-icons">
+                <!-- <Div: Employee Dashboard  -->
+                <div class="hover icon-action"> <a href="/employee-dashboard/<%= locals.user.id %>"><div id="dashboard" class="icon"></div></a><h4>Dashboard</h4></div>
+            </div>
+            <!-- <Div: Home icons -->
+        <%}%>
+            
+    <!-- User is not logged in -->
+    <%} else {%>
+        <!-- <Div: Home icons -->
+        <div class="home-icons">
+            <!-- <Div: Sign in -->
+            <div class="hover icon-action"><a  href="/sign-in"><div id="SignIn" class="icon" ></div></a><h4>Sign In</h4></div>
+            <!-- <Div: Sign up-->
+            <div class="hover icon-action"><a href="/sign-up"><div id="SignUp" class="icon"></div></a><h4>Sign Up</h4></div>
+        </div>
+        <!-- <Div: Home icons -->
+    <% } %>
+    <!-- User is not logged in -->
+</div>
+<!-- <Div : Home page Container  -->
